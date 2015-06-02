@@ -20,6 +20,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.0.0'
+    //图片手势放大缩小
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    //compile 'com.facebook.fresco:fresco:0.5.0+'//图片加载工具 (不成熟)
+//图片加载工具
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
 }
