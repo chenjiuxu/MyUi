@@ -19,4 +19,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_test">Test</string>
     <string name="title_activity_image_more">imageMore</string>
+    <string name="title_activity_image_group">ImageGroup</string>
+    <string name="title_activity_image_carousel">ImageCarousel</string>
+    <string name="title_activity_image_shape">ImageShape</string>
 </resources>

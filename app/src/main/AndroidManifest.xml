@@ -22,11 +22,17 @@
         </activity>
         <activity
             android:name=".activity.ImageAn"
-            android:label="@string/title_activity_image_an" >
+            android:label="单张图片手势缩放" />
+        <activity
+            android:name=".activity.ImageGroup"
+            android:label="多张滑动图片放大" />
+        <activity
+            android:name=".activity.ImageCarousel"
+            android:label="@string/title_activity_image_carousel" >
         </activity>
         <activity
-            android:name=".fragment.imageMore"
-            android:label="@string/title_activity_image_more" >
+            android:name=".activity.ImageShape"
+            android:label="@string/title_activity_image_shape" >
         </activity>
     </application>
 

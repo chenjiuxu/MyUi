@@ -6,7 +6,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/fragment_image_bt1"
@@ -21,9 +22,30 @@
             android:id="@+id/fragment_image_bt2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_marginTop="6dp"
             android:background="@color/transparent_gray"
             android:gravity="center"
             android:text="多张滑动图片放大"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_image_bt3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="图片轮播"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_image_bt4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="各种形状的Imageview"
             android:textColor="@color/color_1CA2F7" />
 
 

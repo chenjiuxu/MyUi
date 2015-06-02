@@ -18,7 +18,7 @@ public class Myapplication extends Application {
         super.onCreate();
 
 
-        // Í¼Ïñ´¦Àí
+        // å›¾åƒå¤„ç†
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getBaseContext())
                 .threadPriority(Thread.NORM_PRIORITY - 2)
                 .denyCacheImageMultipleSizesInMemory()

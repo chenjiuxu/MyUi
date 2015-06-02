@@ -10,7 +10,10 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
-
+/**
+ * 单张网络图片放大
+ * Created by C.jiuxu on 2015/6/2.
+ */
 public class ImageAn extends ActionBarActivity {
 
     private PhotoViewAttacher photoViewAttacher;
