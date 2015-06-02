@@ -1,23 +1,71 @@
 <!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/container"
+    <include layout="@layout/ui_toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/ui_drawerlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
 
-    <fragment
-        android:id="@+id/navigation_drawer"
-        android:name="com.example.administrator.myui.NavigationDrawerFragment"
-        android:layout_width="@dimen/navigation_drawer_width"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        tools:layout="@layout/fragment_navigation_drawer" />
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
 
-</android.support.v4.widget.DrawerLayout>
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:background="@color/color_5E7D9A">
+
+            <TextView
+                android:id="@+id/bt_image"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:background="@color/color_F2F9FF"
+                android:text="图片专区"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/bt_animation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:background="@color/color_F2F9FF"
+                android:text="动画专区"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/bt_view"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:background="@color/color_F2F9FF"
+                android:text="自定义view"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/bt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:background="@color/color_F2F9FF"
+                android:text="页面布局"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

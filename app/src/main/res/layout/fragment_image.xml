@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myui.fragment.ImageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fragment_image_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="单张图片手势缩放"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_image_bt2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="多张滑动图片放大"
+            android:textColor="@color/color_1CA2F7" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
