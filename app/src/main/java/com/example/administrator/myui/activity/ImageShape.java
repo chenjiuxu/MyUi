@@ -14,8 +14,8 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 /**
- * ¸÷ÖÖimageviewĞÎ×´
- * ¸ü¶àÇë²Î¿¼ https://github.com/siyamed/android-shape-imageview
+ * å„ç§imageviewå½¢çŠ¶
+ * æ›´å¤šè¯·å‚è€ƒ https://github.com/siyamed/android-shape-imageview
  * Created by C.jiuxu on 2015/6/2.
  */
 public class ImageShape extends ActionBarActivity {
@@ -38,8 +38,8 @@ public class ImageShape extends ActionBarActivity {
                 .build();
 
         iv1 = (BubbleImageView) findViewById(R.id.activity_image_shape_iv1);
-        iv2 = (RoundedImageView) findViewById(R.id.activity_image_shape_iv2);//Ô²½Ç
-        iv3 = (CircularImageView) findViewById(R.id.activity_image_shape_iv3);//Ô²ĞÎ
+        iv2 = (RoundedImageView) findViewById(R.id.activity_image_shape_iv2);//åœ†è§’
+        iv3 = (CircularImageView) findViewById(R.id.activity_image_shape_iv3);//åœ†å½¢
 
         ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", iv1, optiond);
         ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", iv2, optiond);
