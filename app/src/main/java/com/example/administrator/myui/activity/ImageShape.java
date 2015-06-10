@@ -12,6 +12,8 @@ import com.github.siyamed.shapeimageview.CircularImageView;
 import com.github.siyamed.shapeimageview.RoundedImageView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 /**
  * 各种imageview形状
@@ -31,11 +33,18 @@ public class ImageShape extends ActionBarActivity {
         setContentView(R.layout.activity_image_shape);
 
         optiond = new DisplayImageOptions.Builder()
-                .cacheOnDisk(true)
-                .cacheInMemory(true)
-                .considerExifParams(false)
-                .bitmapConfig(Bitmap.Config.RGB_565)
-                .build();
+                .cacheInMemory(true)//设置下载的图片是否缓存在内存中
+                .cacheOnDisk(true)//设置下载的图片是否缓存在SD卡中
+                .considerExifParams(true)  //是否考虑JPEG图像EXIF参数（旋转，翻转）
+                .imageScaleType(ImageScaleType.IN_SAMPLE_INT)//设置图片以如何的编码方式显示
+                .bitmapConfig(Bitmap.Config.RGB_565)//设置图片的解码类型
+                        //.decodingOptions(BitmapFactory.Options decodingOptions)//设置图片的解码配置
+                .delayBeforeLoading(0)//int delayInMillis为你设置的下载前的延迟时间
+                        //.preProcessor(BitmapProcessor preProcessor)  设置图片加入缓存前，对bitmap进行设置
+                .resetViewBeforeLoading(true)//设置图片在下载前是否重置，复位
+                        // .displayer(new RoundedBitmapDisplayer(20))//不推荐用！！！！是否设置为圆角，弧度为多少 会过多暂用内存
+                .displayer(new FadeInBitmapDisplayer(300))//是否图片加载好后渐入的动画时间，可能会出现闪动
+                .build();//构建完成
 
         iv1 = (BubbleImageView) findViewById(R.id.activity_image_shape_iv1);
         iv2 = (RoundedImageView) findViewById(R.id.activity_image_shape_iv2);//圆角

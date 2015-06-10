@@ -16,7 +16,7 @@ import com.example.administrator.myui.activity.ImageGroup;
 import com.example.administrator.myui.activity.ImageShape;
 
 /**
- * ͼƬר��
+ * 图片专区
  * Created by C.jiuxu on 2015/6/2.
  */
 public class ImageFragment extends Fragment implements View.OnClickListener {
@@ -73,3 +73,4 @@ public class ImageFragment extends Fragment implements View.OnClickListener {
 
     }
 }
+
