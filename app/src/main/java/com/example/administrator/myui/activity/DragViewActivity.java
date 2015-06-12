@@ -12,6 +12,9 @@ import android.widget.RelativeLayout;
 
 import com.example.administrator.myui.R;
 
+/**
+ * ÀÊ“‚Õœ∂Øview
+ */
 public class DragViewActivity extends ActionBarActivity {
 
     private View drag_bt;
@@ -51,7 +54,7 @@ public class DragViewActivity extends ActionBarActivity {
         RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) view
                 .getLayoutParams();
         params.leftMargin = (int) rawX - drag_bt.getWidth() / 2;
-        params.topMargin = (int) rawY -48- drag_bt.getHeight() / 2;
+        params.topMargin = (int) rawY - 48 - drag_bt.getHeight() / 2;
         view.setLayoutParams(params);
     }
 }
