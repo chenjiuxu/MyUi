@@ -19,109 +19,133 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="8dp"
                 android:layout_marginBottom="9dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
 
-            <include layout="@layout/suspen_scroll_view_child"></include>
+            <include
+                android:id="@+id/suspen_scroll_include"
+                layout="@layout/suspen_scroll_view_child"></include>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
