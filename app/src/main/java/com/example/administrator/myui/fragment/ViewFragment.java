@@ -12,6 +12,7 @@ import com.example.administrator.myui.activity.DragViewActivity;
 import com.example.administrator.myui.activity.ImageCarousel;
 import com.example.administrator.myui.activity.ImageGroup;
 import com.example.administrator.myui.activity.ImageShape;
+import com.example.administrator.myui.activity.SlideButtonActivity;
 
 public class ViewFragment extends Fragment implements View.OnClickListener {
 
@@ -61,7 +62,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.fragment_view_bt3:
-                intent = new Intent(activity, ImageCarousel.class);
+                intent = new Intent(activity, SlideButtonActivity.class);
                 startActivity(intent);
                 break;
             case R.id.fragment_view_bt4:

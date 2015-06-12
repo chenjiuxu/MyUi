@@ -35,7 +35,7 @@
             android:layout_marginTop="6dp"
             android:background="@color/transparent_gray"
             android:gravity="center"
-            android:text="图片轮播"
+            android:text="可滑动按钮"
             android:textColor="@color/color_1CA2F7" />
 
         <TextView

@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.administrator.myui.activity.SlideButtonActivity">
+
+    <com.example.administrator.myui.ui.MySlipSwitch
+        android:id="@+id/activity_slide_button_myslipswitch"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>
