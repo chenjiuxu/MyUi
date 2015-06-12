@@ -48,7 +48,7 @@ public class ListViewCompat extends ListView {
             case MotionEvent.ACTION_DOWN: {
                 int x = (int) event.getX();
                 int y = (int) event.getY();
-                int position = pointToPosition(x, y);
+                int position = pointToPosition(x, y);//Listview根据手势来获得点击的哪一个item
                 Log.e(TAG, "postion=" + position);
                 if (position != INVALID_POSITION) {
                     DeleteListViewMainActivity.MessageItem data = (DeleteListViewMainActivity.MessageItem) getItemAtPosition(position);
@@ -66,8 +66,6 @@ public class ListViewCompat extends ListView {
 
         return super.onTouchEvent(event);
     }
-
-
 
 
 }
