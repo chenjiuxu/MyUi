@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myui.activity.SuspendScrollViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_1CA2F7" />
+
+    <com.example.administrator.myui.ui.SuspendScrollView
+        android:id="@+id/activity_suspend_acroll_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/color_1CA2F7" />
+
+            <include layout="@layout/suspen_scroll_view_child"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/color_1CA2F7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_1CA2F7" />
+
+
+        </LinearLayout>
+    </com.example.administrator.myui.ui.SuspendScrollView>
+
+</LinearLayout>

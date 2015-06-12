@@ -27,8 +27,6 @@ public class DragViewActivity extends ActionBarActivity {
         position = new int[2];
         drag_bt = findViewById(R.id.activity_drag_bt);
         drag_bt.setOnTouchListener(new View.OnTouchListener() {
-
-
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
 
@@ -46,8 +44,6 @@ public class DragViewActivity extends ActionBarActivity {
                 return true;
             }
         });
-
-
     }
 
     private void moveViewWithFinger(View view, float rawX, float rawY) {

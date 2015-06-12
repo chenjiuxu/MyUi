@@ -43,6 +43,10 @@
             android:name=".activity.SlideButtonActivity"
             android:label="@string/title_activity_slide_button" >
         </activity>
+        <activity
+            android:name=".activity.SuspendScrollViewActivity"
+            android:label="@string/title_activity_suspend_scroll_view" >
+        </activity>
     </application>
 
 </manifest>
