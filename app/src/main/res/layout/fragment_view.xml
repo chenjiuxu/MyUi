@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myui.fragment.ImageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_view_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="ListView左滑删除"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_view_bt2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="view控件跟随手指移动"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_view_bt3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="图片轮播"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_view_bt4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="各种形状的Imageview"
+            android:textColor="@color/color_1CA2F7" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

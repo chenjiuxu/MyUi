@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.administrator.myui.fragment.ImageFragment;
 import com.example.administrator.myui.fragment.LayoutFragment;
+import com.example.administrator.myui.fragment.ViewFragment;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -29,6 +30,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private View viewBt;
     private View layoutBt;
     private LinearLayout container;
+    private ViewFragment viewFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,19 +44,20 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
 
     private void initialView() {
+        viewFragment = new ViewFragment();
         imageFragment = new ImageFragment();
         layoutFragment = new LayoutFragment();
         fragmentManager = getFragmentManager();
 
         draerlayout = (DrawerLayout) findViewById(R.id.ui_drawerlayout);
 
-        imageBt=findViewById(R.id.bt_image);
+        imageBt = findViewById(R.id.bt_image);
         imageBt.setOnClickListener(this);
-        animationBt=findViewById(R.id.bt_animation);
+        animationBt = findViewById(R.id.bt_animation);
         animationBt.setOnClickListener(this);
-        viewBt=findViewById(R.id.bt_view);
+        viewBt = findViewById(R.id.bt_view);
         viewBt.setOnClickListener(this);
-        layoutBt=findViewById(R.id.bt_layout);
+        layoutBt = findViewById(R.id.bt_layout);
         layoutBt.setOnClickListener(this);
 
 
@@ -67,21 +70,20 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
      */
     private void setfragment(int id) {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        if(id==0){
-            id=R.id.bt_image;
+        if (id == 0) {
+            id = R.id.bt_image;
         }
-        switch (id){
-
+        switch (id) {
             case R.id.bt_image:
-                fragmentTransaction.replace(R.id.container,imageFragment,"图片");
+                fragmentTransaction.replace(R.id.container, imageFragment, "图片");
                 break;
-
             case R.id.bt_animation:
-
+                break;
             case R.id.bt_view:
+                fragmentTransaction.replace(R.id.container, viewFragment, "自定义控件");
+                break;
             case R.id.bt_layout:
-                fragmentTransaction.replace(R.id.container,layoutFragment,"布局");
+                fragmentTransaction.replace(R.id.container, layoutFragment, "布局");
                 break;
         }
 
