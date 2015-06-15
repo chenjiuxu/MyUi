@@ -20,7 +20,7 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import java.util.ArrayList;
 
 /**
- * Í¼Æ¬ÂÖ²¥
+ * å›¾ç‰‡è½®æ’­
  * Created by C.jiuxu on 2015/6/2.
  */
 public class ImageCarousel extends ActionBarActivity {
@@ -49,18 +49,18 @@ public class ImageCarousel extends ActionBarActivity {
         arrayList.add("http://pic.dofay.com/2015/04/23m02.jpg");
         arrayList.add("http://pic.dofay.com/2015/04/23m03.jpg");
         optiond = new DisplayImageOptions.Builder()
-                .cacheInMemory(true)//ÉèÖÃÏÂÔØµÄÍ¼Æ¬ÊÇ·ñ»º´æÔÚÄÚ´æÖĞ
-                .cacheOnDisk(true)//ÉèÖÃÏÂÔØµÄÍ¼Æ¬ÊÇ·ñ»º´æÔÚSD¿¨ÖĞ
-                .considerExifParams(true)  //ÊÇ·ñ¿¼ÂÇJPEGÍ¼ÏñEXIF²ÎÊı£¨Ğı×ª£¬·­×ª£©
-                .imageScaleType(ImageScaleType.IN_SAMPLE_INT)//ÉèÖÃÍ¼Æ¬ÒÔÈçºÎµÄ±àÂë·½Ê½ÏÔÊ¾
-                .bitmapConfig(Bitmap.Config.RGB_565)//ÉèÖÃÍ¼Æ¬µÄ½âÂëÀàĞÍ
-                        //.decodingOptions(BitmapFactory.Options decodingOptions)//ÉèÖÃÍ¼Æ¬µÄ½âÂëÅäÖÃ
-                .delayBeforeLoading(0)//int delayInMillisÎªÄãÉèÖÃµÄÏÂÔØÇ°µÄÑÓ³ÙÊ±¼ä
-                        //.preProcessor(BitmapProcessor preProcessor)  ÉèÖÃÍ¼Æ¬¼ÓÈë»º´æÇ°£¬¶Ôbitmap½øĞĞÉèÖÃ
-                .resetViewBeforeLoading(true)//ÉèÖÃÍ¼Æ¬ÔÚÏÂÔØÇ°ÊÇ·ñÖØÖÃ£¬¸´Î»
-                        // .displayer(new RoundedBitmapDisplayer(20))//²»ÍÆ¼öÓÃ£¡£¡£¡£¡ÊÇ·ñÉèÖÃÎªÔ²½Ç£¬»¡¶ÈÎª¶àÉÙ »á¹ı¶àÔİÓÃÄÚ´æ
-                .displayer(new FadeInBitmapDisplayer(300))//ÊÇ·ñÍ¼Æ¬¼ÓÔØºÃºó½¥ÈëµÄ¶¯»­Ê±¼ä£¬¿ÉÄÜ»á³öÏÖÉÁ¶¯
-                .build();//¹¹½¨Íê³É
+                .cacheInMemory(true)//è®¾ç½®ä¸‹è½½çš„å›¾ç‰‡æ˜¯å¦ç¼“å­˜åœ¨å†…å­˜ä¸­
+                .cacheOnDisk(true)//è®¾ç½®ä¸‹è½½çš„å›¾ç‰‡æ˜¯å¦ç¼“å­˜åœ¨SDå¡ä¸­
+                .considerExifParams(true)  //æ˜¯å¦è€ƒè™‘JPEGå›¾åƒEXIFå‚æ•°ï¼ˆæ—‹è½¬ï¼Œç¿»è½¬ï¼‰
+                .imageScaleType(ImageScaleType.IN_SAMPLE_INT)//è®¾ç½®å›¾ç‰‡ä»¥å¦‚ä½•çš„ç¼–ç æ–¹å¼æ˜¾ç¤º
+                .bitmapConfig(Bitmap.Config.RGB_565)//è®¾ç½®å›¾ç‰‡çš„è§£ç ç±»å‹
+                        //.decodingOptions(BitmapFactory.Options decodingOptions)//è®¾ç½®å›¾ç‰‡çš„è§£ç é…ç½®
+                .delayBeforeLoading(0)//int delayInMillisä¸ºä½ è®¾ç½®çš„ä¸‹è½½å‰çš„å»¶è¿Ÿæ—¶é—´
+                        //.preProcessor(BitmapProcessor preProcessor)  è®¾ç½®å›¾ç‰‡åŠ å…¥ç¼“å­˜å‰ï¼Œå¯¹bitmapè¿›è¡Œè®¾ç½®
+                .resetViewBeforeLoading(true)//è®¾ç½®å›¾ç‰‡åœ¨ä¸‹è½½å‰æ˜¯å¦é‡ç½®ï¼Œå¤ä½
+                        // .displayer(new RoundedBitmapDisplayer(20))//ä¸æ¨èç”¨ï¼ï¼ï¼ï¼æ˜¯å¦è®¾ç½®ä¸ºåœ†è§’ï¼Œå¼§åº¦ä¸ºå¤šå°‘ ä¼šè¿‡å¤šæš‚ç”¨å†…å­˜
+                .displayer(new FadeInBitmapDisplayer(300))//æ˜¯å¦å›¾ç‰‡åŠ è½½å¥½åæ¸å…¥çš„åŠ¨ç”»æ—¶é—´ï¼Œå¯èƒ½ä¼šå‡ºç°é—ªåŠ¨
+                .build();//æ„å»ºå®Œæˆ
         viewpager.setAdapter(new MyAdapter());
         viewpager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -70,7 +70,7 @@ public class ImageCarousel extends ActionBarActivity {
 
             @Override
             public void onPageSelected(int position) {
-                //Ìø×ªÊ±Ö´ĞĞ
+                //è·³è½¬æ—¶æ‰§è¡Œ
             }
 
             @Override
@@ -82,7 +82,7 @@ public class ImageCarousel extends ActionBarActivity {
     }
 
     /**
-     * ÉèÖÃÂÖ²¥
+     * è®¾ç½®è½®æ’­
      */
     private void settimer() {
         final Handler handler = new Handler();
@@ -97,10 +97,10 @@ public class ImageCarousel extends ActionBarActivity {
     }
 
     /**
-     * ÂÖÑ¯ÂÖ²¥
+     * è½®è¯¢è½®æ’­
      */
     private void setswitch() {
-        int a = viewpager.getCurrentItem();//»ñµÃµ±Ç°µÄitem
+        int a = viewpager.getCurrentItem();//è·å¾—å½“å‰çš„item
         if (a == arrayList.size() - 1) {
             teg = false;
         }
@@ -112,11 +112,11 @@ public class ImageCarousel extends ActionBarActivity {
         } else {
             a--;
         }
-        viewpager.setCurrentItem(a);//ÉèÖÃviewoagerÌø×ªµ½aÒ³Ãæ
+        viewpager.setCurrentItem(a);//è®¾ç½®viewoagerè·³è½¬åˆ°aé¡µé¢
 
     }
     /**
-     * viewpaerÊÊÅäÆ÷
+     * viewpaeré€‚é…å™¨
      */
     private class MyAdapter extends PagerAdapter {
         @Override
@@ -130,7 +130,7 @@ public class ImageCarousel extends ActionBarActivity {
         @Override
         public View instantiateItem(ViewGroup container, int position) {
             ImageView imageView = new ImageView(ImageCarousel.this);
-            //  imageView.setScaleType(ImageView.ScaleType.CENTER);//Í¼Æ¬Ä£Ê½
+            //  imageView.setScaleType(ImageView.ScaleType.CENTER);//å›¾ç‰‡æ¨¡å¼
             ImageLoader.getInstance().displayImage(arrayList.get(position), imageView, optiond);
             container.addView(imageView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             return imageView;

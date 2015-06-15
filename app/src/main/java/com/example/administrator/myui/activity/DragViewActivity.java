@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import com.example.administrator.myui.R;
 
 /**
- * ËæÒâÍÏ¶¯view
+ * éšæ„æ‹–åŠ¨view
  */
 public class DragViewActivity extends ActionBarActivity {
 

@@ -31,4 +31,6 @@ dependencies {
     compile 'in.srain.cube:ultra-ptr:1.0.9'
     //各种形状的imageview
     compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+
+    compile 'com.android.support:recyclerview-v7:+'
 }

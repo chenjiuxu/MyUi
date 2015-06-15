@@ -45,7 +45,18 @@
             android:layout_marginTop="6dp"
             android:background="@color/transparent_gray"
             android:gravity="center"
-            android:text="各种形状的Imageview"
+            android:text="滚动悬浮效果"
+            android:textColor="@color/color_1CA2F7" />
+
+
+        <TextView
+            android:id="@+id/fragment_view_bt5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="RecyclerView替代Listview"
             android:textColor="@color/color_1CA2F7" />
 
 

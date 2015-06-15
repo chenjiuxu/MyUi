@@ -47,6 +47,10 @@
             android:name=".activity.SuspendScrollViewActivity"
             android:label="@string/title_activity_suspend_scroll_view" >
         </activity>
+        <activity
+            android:name=".activity.RecyclerViewActivity"
+            android:label="@string/title_activity_recycler_view" >
+        </activity>
     </application>
 
 </manifest>
