@@ -29,8 +29,7 @@ public class DragViewActivity extends ActionBarActivity {
         drag_bt.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-
-                float x = motionEvent.getRawX();
+                float x = motionEvent.getRawX();//获得整个屏幕的坐标点
                 float y = motionEvent.getRawY();
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
