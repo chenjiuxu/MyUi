@@ -10,14 +10,14 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
-import com.example.administrator.myui.R;
-import java.util.ArrayList;
 
+import com.example.administrator.myui.R;
+import com.example.administrator.myui.activity.recyclerviewadapter.MyRecyclerViewAdapter;
+import com.example.administrator.myui.activity.recyclerviewadapter.onItemClick;
+
+import java.util.ArrayList;
 
 
 /**
@@ -38,38 +38,31 @@ public class RecyclerViewActivity extends ActionBarActivity {
      */
     private SwipeRefreshLayout swipeRefreshLayout;
     private boolean tag = true;
+    private MyRecyclerViewAdapter myAdapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
+        initial();
         getdata();
-        recyclerView = (RecyclerView) findViewById(R.id.activity_recycler_view_rv);
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_recycler_view_sfl);//下拉刷新组件
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {//下拉刷新监听
             @Override
             public void onRefresh() {
                 Toast.makeText(RecyclerViewActivity.this, "下拉刷新", Toast.LENGTH_SHORT).show();
                 swipeRefreshLayout.setRefreshing(false);
 
+                arrayList.remove(0);
+                myAdapter.notifyItemRemoved(0);
+
             }
         });
-        gridLayoutManager = new GridLayoutManager(this, 2);//这里用线性宫格显示 类似于grid view
-        staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, OrientationHelper.VERTICAL);//这里用线性宫格显示 类似于瀑布流
-        layoutManager = new LinearLayoutManager(this);//线型显示
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);//设置滚动方向
-        //       layoutManager.scrollToPosition(10);//设置打开第几个item
-//        recyclerView.addItemDecoration(new MyItemDecoration(this, LinearLayoutManager.VERTICAL)); // 分割线
-        recyclerView.setItemAnimator(new DefaultItemAnimator());//设置动画
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setHasFixedSize(true);
-        MyAdapter myAdapter = new MyAdapter();
-        myAdapter.setOnItemClickListener(new onItemClick() {
-            @Override
-            public void setonItemClick(View view, int position) {
-                Toast.makeText(RecyclerViewActivity.this, position + "", Toast.LENGTH_SHORT).show();
-            }
-        });
-        recyclerView.setAdapter(myAdapter);
+        setRecyclerViewManager();
+        setRecyclerView();
+        /**
+         * 滚动事件
+         * */
         recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
@@ -80,87 +73,77 @@ public class RecyclerViewActivity extends ActionBarActivity {
 //                findLastVisibleItemPosition()
 //                findLastCompletelyVisibleItemPosition()//下方
 //                Log.e("滚动状态1", newState + "");
-                Log.e("滚动状态2", a + "");
-                if (a == arrayList.size() - 1 && tag) {
+                int totalItemCount = layoutManager.getItemCount() - 1;
+                if (a == totalItemCount && tag) {//通知数据改变
                     tag = false;
-                    Toast.makeText(RecyclerViewActivity.this, "上拉加载。。。。。", Toast.LENGTH_SHORT).show();
+                    for (int i = 0; i < 20; i++) {
+                        arrayList.add("新数据");
+                    }
+                    myAdapter.notifyItemRange();
                     tag = true;
+                    Toast.makeText(RecyclerViewActivity.this, "数据以更新", Toast.LENGTH_SHORT).show();
                 }
+                Log.e("滚动状态2", a + "");
             }
         });
     }
 
+    /**
+     * 初始化页面view
+     */
+    private void initial() {
+
+        recyclerView = (RecyclerView) findViewById(R.id.activity_recycler_view_rv);
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_recycler_view_sfl);//下拉刷新组件
+
+
+    }
+
+    /**
+     * 获得模拟数据
+     */
     private void getdata() {
-        arrayList = new ArrayList<String>();
-        for (int i = 0; i <= 100; i++) {
+        if (arrayList == null) {
+            arrayList = new ArrayList<String>();
+        }
+        for (int i = 0; i <= 20; i++) {
             arrayList.add("RecyclerView替代Listview");
         }
     }
 
-
     /**
-     * 新的适配器
+     * RecyclerView布局Manager
      */
-    public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
-        private onItemClick onItemClick;
-        private onItemLongClick onItemLongClick;
-
-        @Override
-        public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {//  第二个参数 为item的类型
-            View view = null;
-            switch (viewType) {
-                case 1:
-                    view = LayoutInflater.from(RecyclerViewActivity.this).inflate(R.layout.activity_recycler_view_rv_item, null);
-                    break;
-            }
-            MyViewHolder myViewHolder = new MyViewHolder(view, onItemClick, onItemLongClick);
-            return myViewHolder;
-        }
-
-        public void setOnItemClickListener(onItemClick onItemClick) {
-            this.onItemClick = onItemClick;
-        }
-
-        public void setOnItemLongClickListener(onItemLongClick onItemLongClick) {
-            this.onItemLongClick = onItemLongClick;
-        }
-
-        @Override
-        public void onBindViewHolder(MyViewHolder holder, int position) {//根据要显示的item放入数据
-            int itemtype = getItemViewType(position);
-            switch (itemtype) {
-                case 1:
-                    holder.tvname.setText(arrayList.get(position));
-                    holder.tvnsex.setText(position + "");
-                    break;
-            }
-        }
-
-        @Override
-        public int getItemViewType(int position) {// item的类型 返回类型
-            return 1;
-        }
-
-        @Override
-        public int getItemCount() {//显示数据的长度
-            return arrayList.size();
-        }
-
-
+    private void setRecyclerViewManager() {
+        gridLayoutManager = new GridLayoutManager(this, 2);//这里用线性宫格显示 类似于grid view
+        staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, OrientationHelper.VERTICAL);//这里用线性宫格显示 类似于瀑布流
+        layoutManager = new LinearLayoutManager(this);//线型显示
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);//设置滚动方向
     }
 
     /**
-     * item点击事件
+     * RecyclerView设置属性
      */
-    public abstract class onItemClick {
-        public abstract void setonItemClick(View view, int position);
-    }
+    private void setRecyclerView() {
+//      layoutManager.scrollToPosition(10);//设置打开第几个item
+//      recyclerView.addItemDecoration(new MyItemDecoration(this, LinearLayoutManager.VERTICAL)); // 分割线
+        recyclerView.setItemAnimator(new DefaultItemAnimator());//设置动画
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
+        myAdapter = new MyRecyclerViewAdapter(this, arrayList);
 
-    /**
-     * item长按点击事件
-     */
-    public abstract class onItemLongClick {
-        abstract void setonItemLongClick(View view, int position);
+        myAdapter.setOnItemClickListener(new onItemClick() {//设置item点击事件
+            @Override
+            public void setonItemClick(View view, int position) {
+                arrayList.remove(position);
+                myAdapter.notifyItemRemoved(position);
+                myAdapter.notifyItemRangeChanged(position, 20);//删除后数据发生变化
+                Toast.makeText(RecyclerViewActivity.this, position + "个以删除！！！！！！", Toast.LENGTH_SHORT).show();
+            }
+        });
+        recyclerView.setAdapter(myAdapter);
+
+
     }
 
     /**
@@ -170,43 +153,4 @@ public class RecyclerViewActivity extends ActionBarActivity {
 
 
     }
-
-    /**
-     * 新特性用于封装item  holder 点击事件
-     */
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
-        public final TextView tvname;
-        public final TextView tvnsex;
-        private final View view;
-        private final onItemClick onItemClick;
-        private final onItemLongClick onItemLongClick;
-
-
-        public MyViewHolder(View itemView, onItemClick onItemClick, onItemLongClick onItemLongClick) {
-            super(itemView);
-            this.view = itemView;
-            this.onItemClick = onItemClick;
-            this.onItemLongClick = onItemLongClick;
-            tvname = (TextView) itemView.findViewById(R.id.activity_recycler_view_rv_tv);
-            tvnsex = (TextView) itemView.findViewById(R.id.activity_recycler_view_rv_tv1);
-            view.setOnClickListener(this);
-        }
-
-        @Override
-        public void onClick(View view) {
-            if (onItemClick != null) {
-                onItemClick.setonItemClick(view, getLayoutPosition());
-            }
-        }
-
-        @Override
-        public boolean onLongClick(View view) {
-            if (onItemLongClick != null) {
-                onItemLongClick.setonItemLongClick(view, getLayoutPosition());
-            }
-            return true;
-        }
-    }
-
-
 }
