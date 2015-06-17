@@ -41,27 +41,27 @@
             android:label="随意拖动view" />
         <activity
             android:name=".activity.SlideButtonActivity"
-            android:label="@string/title_activity_slide_button" >
+            android:label="滑动的按钮" >
         </activity>
         <activity
             android:name=".activity.SuspendScrollViewActivity"
-            android:label="@string/title_activity_suspend_scroll_view" >
+            android:label="悬浮ScrollView" >
         </activity>
         <activity
             android:name=".activity.RecyclerViewActivity"
-            android:label="@string/title_activity_recycler_view" >
+            android:label="RecyclerView 替代listview" >
         </activity>
         <activity
             android:name=".activity.CardViewActivity"
-            android:label="@string/title_activity_card_view" >
+            android:label="卡片风" >
         </activity>
         <activity
             android:name=".activity.FragmentCutPagerTitleStripActivity"
-            android:label="@string/title_activity_fragment_cut_pager_title_strip" >
+            android:label="选项卡指示" >
         </activity>
         <activity
             android:name=".activity.FragmentCutPagerSlidingTabStripActivity"
-            android:label="@string/title_activity_fragment_cut_pager_sliding_tab_strip" >
+            android:label="选项卡切换" >
         </activity>
     </application>
 
