@@ -59,6 +59,16 @@
             android:text="RecyclerView替代Listview 5.0特性 安卓自带下拉刷新"
             android:textColor="@color/color_1CA2F7" />
 
+ <TextView
+            android:id="@+id/fragment_view_bt6"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text=" 5.0特性 CardView 卡片风 图片主题色获取0"
+            android:textColor="@color/color_1CA2F7" />
+
 
     </LinearLayout>
 

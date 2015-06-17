@@ -1,9 +1,9 @@
 package com.example.administrator.myui;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,7 +16,9 @@ import com.example.administrator.myui.fragment.ImageFragment;
 import com.example.administrator.myui.fragment.LayoutFragment;
 import com.example.administrator.myui.fragment.ViewFragment;
 
-
+/**
+ * Created by C.jiuxu on 2015/6/2.
+ * */
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
     private Toolbar toolbar;
     private DrawerLayout draerlayout;
@@ -47,7 +49,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         viewFragment = new ViewFragment();
         imageFragment = new ImageFragment();
         layoutFragment = new LayoutFragment();
-        fragmentManager = getFragmentManager();
+        fragmentManager = getSupportFragmentManager();
 
         draerlayout = (DrawerLayout) findViewById(R.id.ui_drawerlayout);
 
@@ -69,7 +71,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
      * fragnent页面切换
      */
     private void setfragment(int id) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+      FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         if (id == 0) {
             id = R.id.bt_image;
         }

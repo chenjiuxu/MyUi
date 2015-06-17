@@ -22,6 +22,7 @@ import com.example.administrator.myui.ui.SlideView;
 
 /**
  * 仿QQ侧滑listview
+ * Created by C.jiuxu on 2015/6/17.
  */
 public class DeleteListViewMainActivity extends ActionBarActivity implements OnItemClickListener, OnClickListener,
         SlideView.OnSlideListener {

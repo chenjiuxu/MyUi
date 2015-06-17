@@ -27,4 +27,11 @@
     <string name="title_activity_slide_button">SlideButtonActivity</string>
     <string name="title_activity_suspend_scroll_view">SuspendScrollViewActivity</string>
     <string name="title_activity_recycler_view">RecyclerViewActivity</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="title_activity_fragment_cut_pager_title_strip">
+        FragmentCutPagerTitleStripActivity
+    </string>
+    <string name="title_activity_fragment_cut_pager_sliding_tab_strip">
+        FragmentCutPagerSlidingTabStripActivity
+    </string>
 </resources>

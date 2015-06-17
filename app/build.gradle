@@ -35,4 +35,8 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:+'
     //卡片风格
     compile 'com.android.support:cardview-v7:21.+'
+    //颜色提取
+    compile 'com.android.support:palette-v7:21.0.+'
+    //选项卡
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }

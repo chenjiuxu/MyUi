@@ -11,6 +11,10 @@ import android.widget.Toast;
 import com.example.administrator.myui.R;
 import com.example.administrator.myui.ui.SuspendScrollView;
 
+/**
+ * 悬浮ScrollView
+ * Created by C.jiuxu on 2015/6/2.
+ */
 public class SuspendScrollViewActivity extends ActionBarActivity implements SuspendScrollView.OnScrollYListener {
 
     private SuspendScrollView suspendScrollView;

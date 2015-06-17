@@ -51,6 +51,18 @@
             android:name=".activity.RecyclerViewActivity"
             android:label="@string/title_activity_recycler_view" >
         </activity>
+        <activity
+            android:name=".activity.CardViewActivity"
+            android:label="@string/title_activity_card_view" >
+        </activity>
+        <activity
+            android:name=".activity.FragmentCutPagerTitleStripActivity"
+            android:label="@string/title_activity_fragment_cut_pager_title_strip" >
+        </activity>
+        <activity
+            android:name=".activity.FragmentCutPagerSlidingTabStripActivity"
+            android:label="@string/title_activity_fragment_cut_pager_sliding_tab_strip" >
+        </activity>
     </application>
 
 </manifest>

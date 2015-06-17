@@ -1,21 +1,23 @@
 package com.example.administrator.myui.fragment;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.administrator.myui.R;
+import com.example.administrator.myui.activity.CardViewActivity;
 import com.example.administrator.myui.activity.DeleteListViewMainActivity;
 import com.example.administrator.myui.activity.DragViewActivity;
-import com.example.administrator.myui.activity.ImageCarousel;
-import com.example.administrator.myui.activity.ImageGroup;
-import com.example.administrator.myui.activity.ImageShape;
 import com.example.administrator.myui.activity.RecyclerViewActivity;
 import com.example.administrator.myui.activity.SlideButtonActivity;
 import com.example.administrator.myui.activity.SuspendScrollViewActivity;
-
+/**
+ * Created by C.jiuxu on 2015/6/2.
+ * */
 public class ViewFragment extends Fragment implements View.OnClickListener {
 
     private View image_bt1;
@@ -23,8 +25,8 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
     private View image_bt3;
     private View image_bt4;
     private Activity activity;
-    private View image_bt5
-            ;
+    private View image_bt5;
+    private View image_bt6;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,13 +46,15 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
         image_bt3 = view.findViewById(R.id.fragment_view_bt3);
         image_bt4 = view.findViewById(R.id.fragment_view_bt4);
         image_bt5 = view.findViewById(R.id.fragment_view_bt5);
+        image_bt6 = view.findViewById(R.id.fragment_view_bt6);
 
         image_bt1.setOnClickListener(this);
         image_bt2.setOnClickListener(this);
         image_bt3.setOnClickListener(this);
         image_bt4.setOnClickListener(this);
         image_bt5.setOnClickListener(this);
-        return view ;
+        image_bt6.setOnClickListener(this);
+        return view;
 
 
     }
@@ -74,8 +78,13 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
             case R.id.fragment_view_bt4:
                 intent = new Intent(activity, SuspendScrollViewActivity.class);
                 startActivity(intent);
-                break;case R.id.fragment_view_bt5:
+                break;
+            case R.id.fragment_view_bt5:
                 intent = new Intent(activity, RecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.fragment_view_bt6:
+                intent = new Intent(activity, CardViewActivity.class);
                 startActivity(intent);
                 break;
         }

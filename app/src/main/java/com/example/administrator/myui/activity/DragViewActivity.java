@@ -14,6 +14,7 @@ import com.example.administrator.myui.R;
 
 /**
  * 随意拖动view
+ * Created by C.jiuxu on 2015/6/17.
  */
 public class DragViewActivity extends ActionBarActivity {
 
