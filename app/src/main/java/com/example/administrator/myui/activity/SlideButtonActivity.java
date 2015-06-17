@@ -6,7 +6,10 @@ import android.widget.Toast;
 
 import com.example.administrator.myui.R;
 import com.example.administrator.myui.ui.MySlipSwitch;
-
+/**
+ * 滑动的按钮
+ * Created by C.jiuxu on 2015/6/17.
+ */
 public class SlideButtonActivity extends ActionBarActivity {
 
     private MySlipSwitch slide_button;
