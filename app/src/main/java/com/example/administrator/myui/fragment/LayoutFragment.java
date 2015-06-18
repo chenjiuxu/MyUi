@@ -11,6 +11,7 @@ import com.example.administrator.myui.R;
 import com.example.administrator.myui.activity.DragTopLayoutActivity;
 import com.example.administrator.myui.activity.FragmentCutPagerSlidingTabStripActivity;
 import com.example.administrator.myui.activity.FragmentCutPagerTitleStripActivity;
+import com.example.administrator.myui.activity.PopupWindowActivity;
 
 /**
  * Created by C.jiuxu on 2015/6/2.
@@ -28,6 +29,7 @@ public class LayoutFragment extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.fragment_layout_bt1).setOnClickListener(this);
         view.findViewById(R.id.fragment_layout_bt2).setOnClickListener(this);
         view.findViewById(R.id.fragment_layout_bt3).setOnClickListener(this);
+        view.findViewById(R.id.fragment_layout_bt4).setOnClickListener(this);
         return view;
     }
 
@@ -47,6 +49,10 @@ public class LayoutFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.fragment_layout_bt3:
                 intent = new Intent(getActivity(), DragTopLayoutActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.fragment_layout_bt4:
+                intent = new Intent(getActivity(), PopupWindowActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/chocolate"
+    android:padding="6dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_popup_window_alert_dialog_bt"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:text="这是弹出式对话框"
+        android:gravity="center"
+        android:textColor="@color/background_floating_material_dark"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/activity_popup_window_alert_dialog_bt1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="确定"
+            android:gravity="center"
+            android:background="@color/color_1CA2F7"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/activity_popup_window_alert_dialog_bt2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="取消"
+            android:gravity="center"
+            android:background="@color/color_5E7D9A"
+            android:textColor="@color/white"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

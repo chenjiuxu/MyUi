@@ -4,7 +4,8 @@
     <style name="AppTheme" parent="My.Theme">
         <!-- Customize your theme here. -->
     </style>
-    <style name="My.Theme"    parent="Theme.AppCompat.NoActionBar">
+
+    <style name="My.Theme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowContentOverlay">@null</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
@@ -15,6 +16,17 @@
         <item name="colorAccent">@color/transparent_gray</item>
         <!--Window color-->
         <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="AlertDialogAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/alert_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/alert_dialog_exit</item>
     </style>
 
 </resources>

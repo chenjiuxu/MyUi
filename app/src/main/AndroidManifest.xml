@@ -67,6 +67,10 @@
             android:name=".activity.DragTopLayoutActivity"
             android:label="@string/title_activity_drag_top_layout" >
         </activity>
+        <activity
+            android:name=".activity.PopupWindowActivity"
+            android:label="@string/title_activity_popup_window" >
+        </activity>
     </application>
 
 </manifest>
