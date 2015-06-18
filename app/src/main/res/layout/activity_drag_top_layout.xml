@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myui.activity.DragTopLayoutActivity">
+
+    <github.chenupt.dragtoplayout.DragTopLayout
+        android:id="@+id/activity_drag_top_layout_dragtoplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:background="@color/color_C3C3C3"></LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_drag_top_layout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </github.chenupt.dragtoplayout.DragTopLayout>
+
+
+</RelativeLayout>

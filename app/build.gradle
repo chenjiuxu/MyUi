@@ -39,4 +39,6 @@ dependencies {
     compile 'com.android.support:palette-v7:21.0.+'
     //选项卡
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    //顶部下拉
+    compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
 }

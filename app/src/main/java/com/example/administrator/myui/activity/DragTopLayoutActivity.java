@@ -2,56 +2,55 @@ package com.example.administrator.myui.activity;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerTitleStrip;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MotionEvent;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.administrator.myui.R;
 import com.example.administrator.myui.fragment.ImageFragment;
 import com.example.administrator.myui.fragment.LayoutFragment;
 import com.example.administrator.myui.fragment.ViewFragment;
 
-/**
- * 选项卡指示
- * Created by C.jiuxu on 2015/6/17.
- */
-public class FragmentCutPagerTitleStripActivity extends ActionBarActivity {
+import github.chenupt.dragtoplayout.DragTopLayout;
 
+public class DragTopLayoutActivity extends ActionBarActivity {
+
+    private DragTopLayout dragtoplayout;
     private ViewPager viewpager;
-    private PagerTitleStrip pagertitlestrip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment_cut_pager_title_strip);
+        setContentView(R.layout.activity_drag_top_layout);
         initialView();
+        setdragtoplayout();
     }
 
+    /**
+     * 设置dragtoplayout
+     */
+    private void setdragtoplayout() {
+        dragtoplayout.openTopView(true);
+        dragtoplayout.setOverDrag(false);//设置顶部是否可托拽变大
+//        dragtoplayout.setAlpha(0.4f);//透明度
+    }
+
+    /**
+     * 初始化页面控件
+     *
+     */
     private void initialView() {
-        viewpager = (ViewPager) findViewById(R.id.activity_fragment_cut_pager_title_strip_viewpager);
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        viewpager.setAdapter(new MyFragmentStatePagerAdapter(fragmentManager));
-        pagertitlestrip = (PagerTitleStrip) findViewById(R.id.activity_fragment_cut_pager_title_strip_pagertitlestrip);
-
-        viewpager.setOnTouchListener(new View.OnTouchListener() {//viewpager的滚动监听
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                int a = viewpager.getScrollX();
-                Log.e("viewpager滚动动监听", a + "");
-                return false;
-            }
-        });
+        dragtoplayout = (DragTopLayout) findViewById(R.id.activity_drag_top_layout_dragtoplayout);
+        viewpager = (ViewPager) findViewById(R.id.activity_drag_top_layout_viewpager);
+        viewpager.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager()));
     }
 
-    private class MyFragmentStatePagerAdapter extends FragmentStatePagerAdapter {
 
-
-        public MyFragmentStatePagerAdapter(FragmentManager fm) {
+    private class MyFragmentPagerAdapter extends FragmentPagerAdapter {
+        public MyFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 

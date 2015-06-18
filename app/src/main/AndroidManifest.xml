@@ -63,6 +63,10 @@
             android:name=".activity.FragmentCutPagerSlidingTabStripActivity"
             android:label="选项卡切换" >
         </activity>
+        <activity
+            android:name=".activity.DragTopLayoutActivity"
+            android:label="@string/title_activity_drag_top_layout" >
+        </activity>
     </application>
 
 </manifest>

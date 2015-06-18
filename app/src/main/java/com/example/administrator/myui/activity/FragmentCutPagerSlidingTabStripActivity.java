@@ -34,7 +34,6 @@ public class FragmentCutPagerSlidingTabStripActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_cut_pager_sliding_tab_strip);
-
         pagerSlidingTabStrip = (PagerSlidingTabStrip) findViewById(R.id.activity_fragnent_cut_pager_sliding_tab_strip);
         viewpager = (ViewPager) findViewById(R.id.activity_fragnent_cut_pager_sliding_tab_strip_viewpager);
         viewpager.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager()));
@@ -43,12 +42,9 @@ public class FragmentCutPagerSlidingTabStripActivity extends ActionBarActivity {
     }
 
     private class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-
-
         public MyFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
         }
-
         @Override
         public Fragment getItem(int position) {
             switch (position) {
@@ -61,12 +57,10 @@ public class FragmentCutPagerSlidingTabStripActivity extends ActionBarActivity {
             }
             return null;
         }
-
         @Override
         public int getCount() {
             return 3;
         }
-
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
@@ -80,8 +74,6 @@ public class FragmentCutPagerSlidingTabStripActivity extends ActionBarActivity {
             return super.getPageTitle(position);
         }
     }
-
-
     private void changeColor(int newColor) {
         pagerSlidingTabStrip.setIndicatorColor(newColor);
         setActionBarcolor(newColor);
@@ -91,7 +83,6 @@ public class FragmentCutPagerSlidingTabStripActivity extends ActionBarActivity {
 
     /**
      * 改变ActionBar color
-     *
      * @param newColor 颜色值
      */
     private void setActionBarcolor(int newColor) {
