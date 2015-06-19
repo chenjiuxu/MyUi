@@ -15,7 +15,10 @@ import com.example.administrator.myui.fragment.LayoutFragment;
 import com.example.administrator.myui.fragment.ViewFragment;
 
 import github.chenupt.dragtoplayout.DragTopLayout;
-
+/**
+ * 顶部下拉 DragTopLayout
+ * Created by C.jiuxu on 2015/6/17.
+ * */
 public class DragTopLayoutActivity extends ActionBarActivity {
 
     private DragTopLayout dragtoplayout;

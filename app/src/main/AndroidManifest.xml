@@ -65,15 +65,15 @@
         </activity>
         <activity
             android:name=".activity.DragTopLayoutActivity"
-            android:label="@string/title_activity_drag_top_layout" >
+            android:label="顶部下拉 DragTopLayout" >
         </activity>
         <activity
             android:name=".activity.PopupWindowActivity"
-            android:label="@string/title_activity_popup_window" >
+            android:label="Dialog popuWindow弹出式对话框" >
         </activity>
         <activity
             android:name=".activity.SecretTextViewActivity"
-            android:label="@string/title_activity_secret_text_view" >
+            android:label="文字随机消失显示" >
         </activity>
     </application>
 
