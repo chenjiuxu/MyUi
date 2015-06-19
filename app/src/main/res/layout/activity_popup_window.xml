@@ -21,18 +21,29 @@
         android:layout_marginTop="6dp"
         android:background="@color/transparent_gray"
         android:gravity="center"
-        android:text="自定义 PopupWindow相对与屏幕底部"
+        android:text="PopupWindow相对与屏幕底部"
         android:textColor="@color/color_1CA2F7" />
 
     <TextView
-        android:layout_gravity="center_horizontal"
         android:id="@+id/activity_popup_window_bt3"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="6dp"
         android:background="@color/transparent_gray"
         android:gravity="center"
-        android:text="自定义 PopupWindow相对与屏幕底部"
+        android:text="PopupWindow相对控件上下左右"
+        android:textColor="@color/color_1CA2F7" />
+
+    <TextView
+        android:id="@+id/activity_popup_window_bt4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@color/transparent_gray"
+        android:gravity="center"
+        android:text="LoadingDialong加载网络请求等待框"
         android:textColor="@color/color_1CA2F7" />
 
 </LinearLayout>

@@ -13,11 +13,14 @@ import com.example.administrator.myui.activity.CardViewActivity;
 import com.example.administrator.myui.activity.DeleteListViewMainActivity;
 import com.example.administrator.myui.activity.DragViewActivity;
 import com.example.administrator.myui.activity.RecyclerViewActivity;
+import com.example.administrator.myui.activity.SecretTextViewActivity;
 import com.example.administrator.myui.activity.SlideButtonActivity;
 import com.example.administrator.myui.activity.SuspendScrollViewActivity;
+
 /**
+ *文字随机隐藏 显示界面
  * Created by C.jiuxu on 2015/6/2.
- * */
+ */
 public class ViewFragment extends Fragment implements View.OnClickListener {
 
     private View image_bt1;
@@ -27,6 +30,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
     private Activity activity;
     private View image_bt5;
     private View image_bt6;
+    private View image_bt7;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +51,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
         image_bt4 = view.findViewById(R.id.fragment_view_bt4);
         image_bt5 = view.findViewById(R.id.fragment_view_bt5);
         image_bt6 = view.findViewById(R.id.fragment_view_bt6);
+        image_bt7 = view.findViewById(R.id.fragment_view_bt7);
 
         image_bt1.setOnClickListener(this);
         image_bt2.setOnClickListener(this);
@@ -54,6 +59,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
         image_bt4.setOnClickListener(this);
         image_bt5.setOnClickListener(this);
         image_bt6.setOnClickListener(this);
+        image_bt7.setOnClickListener(this);
         return view;
 
 
@@ -85,6 +91,10 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.fragment_view_bt6:
                 intent = new Intent(activity, CardViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.fragment_view_bt7:
+                intent = new Intent(activity, SecretTextViewActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -16,11 +16,20 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import com.example.administrator.myui.R;
+import com.example.administrator.myui.ui.LoadingDialog;
 
+/**
+ * popupWindow Dialog  区别 dialog 不阻塞线程  Popupwindow阻塞
+ * 各种弹框
+ * 网等待框
+ * Created by C.jiuxu on 2015/6/19.
+ */
 public class PopupWindowActivity extends ActionBarActivity implements View.OnClickListener {
 
     private View viewbt2;
     private View viewbt3;
+    private int i = 0;
+    private View viewbt4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +48,8 @@ public class PopupWindowActivity extends ActionBarActivity implements View.OnCli
         viewbt2.setOnClickListener(this);
         viewbt3 = findViewById(R.id.activity_popup_window_bt3);
         viewbt3.setOnClickListener(this);
+        viewbt4 = findViewById(R.id.activity_popup_window_bt4);
+        viewbt4.setOnClickListener(this);
     }
 
     @Override
@@ -54,18 +65,26 @@ public class PopupWindowActivity extends ActionBarActivity implements View.OnCli
             case R.id.activity_popup_window_bt3://弹出自定义popupeWindow
                 popupeWindowView(viewbt3);
                 break;
+            case R.id.activity_popup_window_bt4://弹出自定义popupeWindow
+                LoadingDialog loadingDialog = new LoadingDialog(this);
+                loadingDialog.show();
+                break;
         }
 
     }
 
+    /**
+     * popupWindow在指定控件的各个方向
+     *
+     * @param viewbt3 指定控件
+     */
     private void popupeWindowView(View viewbt3) {
-        View view = LayoutInflater.from(this).inflate(R.layout.activity_popup_window_alert_dialog, null); //需要弹出的布局
+        View view = LayoutInflater.from(this).inflate(R.layout.activity_popup_window_alert_dialog2, null); //需要弹出的布局
         PopupWindow popupWindow = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);//指定窗口大小
         popupWindow.setFocusable(true);//设置可以获得焦点
         popupWindow.setOutsideTouchable(true);
         popupWindow.setBackgroundDrawable(new BitmapDrawable());// setFocusable（）和此方法 一起点击外屏幕popupewindow消失
-
-
+        popupWindow.setAnimationStyle(R.style.AlertDialogAnimation);//设置进入 退出动画
         //测量view的尺寸
         view.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);// 没有这句话是无法测量
         int popupWidth = view.getMeasuredWidth();
@@ -78,10 +97,25 @@ public class PopupWindowActivity extends ActionBarActivity implements View.OnCli
         int Y = location[1];
         int a = Y - popupHeight;
 
-//        popupWindow.showAtLocation(viewbt3, Gravity.NO_GRAVITY, X,a); //控件上方
-//        popupWindow.showAsDropDown(viewbt3);// 控件下方
+        if (i > 3) {
+            i = 0;
+        }
+        switch (i) {
 
-        popupWindow.showAtLocation(viewbt3,Gravity.NO_GRAVITY,X-popupWidth,Y);//控件左侧
+            case 0:
+                popupWindow.showAtLocation(viewbt3, Gravity.NO_GRAVITY, X, a); //控件上方
+                break;
+            case 1:
+                popupWindow.showAsDropDown(viewbt3);// 控件下方
+                break;
+            case 2:
+                popupWindow.showAtLocation(viewbt3, Gravity.NO_GRAVITY, X - popupWidth, Y);//控件左侧
+                break;
+            case 3:
+                popupWindow.showAtLocation(viewbt3, Gravity.NO_GRAVITY, X + viewbt3.getWidth(), Y);//控件右侧
+                break;
+        }
+        i++;
     }
 
     /**

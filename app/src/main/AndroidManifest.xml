@@ -71,6 +71,10 @@
             android:name=".activity.PopupWindowActivity"
             android:label="@string/title_activity_popup_window" >
         </activity>
+        <activity
+            android:name=".activity.SecretTextViewActivity"
+            android:label="@string/title_activity_secret_text_view" >
+        </activity>
     </application>
 
 </manifest>

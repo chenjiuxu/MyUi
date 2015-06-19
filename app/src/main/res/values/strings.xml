@@ -36,4 +36,6 @@
     </string>
     <string name="title_activity_drag_top_layout">DragTopLayoutActivity</string>
     <string name="title_activity_popup_window">PopupWindowActivity</string>
+    <string name="title_activity_loading_dialo">LoadingDialoActivity</string>
+    <string name="title_activity_secret_text_view">SecretTextViewActivity</string>
 </resources>

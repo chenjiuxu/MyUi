@@ -18,15 +18,30 @@
         <item name="android:windowBackground">@android:color/white</item>
     </style>
 
-
+    <!--popupWindow动画-->
     <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/popup_enter</item>
         <item name="android:windowExitAnimation">@anim/popup_exit</item>
     </style>
-
+    <!--AlertDialog动画-->
     <style name="AlertDialogAnimation" mce_bogus="1" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/alert_dialog_enter</item>
         <item name="android:windowExitAnimation">@anim/alert_dialog_exit</item>
+    </style>
+
+    <!--LoadingDialog样式-->
+    <style name="Dialog_bocop">
+        <item name="android:windowBackground">@color/bocop_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+
+    <!--AlertDialog动画-->
+    <style name="DialogbocopAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/alpha_enter</item>
+        <item name="android:windowExitAnimation">@anim/alpha_exit</item>
     </style>
 
 </resources>
