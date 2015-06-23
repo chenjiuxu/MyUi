@@ -34,19 +34,29 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {//  第二个参数 为item的类型
         View view = null;
+        MyViewHolder myViewHolder = null;
         switch (viewType) {
             case 1:
                 view = LayoutInflater.from(context).inflate(R.layout.activity_recycler_view_rv_item, null);
+                myViewHolder = new MyViewHolder(view, onItemClick, onItemLongClick);
                 break;
         }
-        MyViewHolder myViewHolder = new MyViewHolder(view, onItemClick, onItemLongClick);
+
         return myViewHolder;
     }
 
+    /**
+     * tiem点击事件
+     * @param onItemClick
+     */
     public void setOnItemClickListener(onItemClick onItemClick) {
         this.onItemClick = onItemClick;
     }
 
+    /**
+     * item长按点击事件
+     * @param onItemLongClick
+     */
     public void setOnItemLongClickListener(onItemLongClick onItemLongClick) {
         this.onItemLongClick = onItemLongClick;
     }
@@ -73,10 +83,11 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
         return arrayList.size();
     }
 
+    /**
+     * 增加数据只刷新增加的
+     */
     public void notifyItemRange() {
-        MyRecyclerViewAdapter.this.notifyItemRangeInserted(itemCount - 1, arrayList.size()-itemCount);
-        Log.e("是什么", itemCount - 1 + "//////" + arrayList.size());
-
+        MyRecyclerViewAdapter.this.notifyItemRangeInserted(itemCount - 1, arrayList.size() - itemCount);
     }
 
 

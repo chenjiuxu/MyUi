@@ -67,7 +67,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                int a = layoutManager.findLastCompletelyVisibleItemPosition();//屏幕下方出现的item个数
+                int a = layoutManager.findLastCompletelyVisibleItemPosition();//屏幕下方出现的item第几个item
 //                findFirstVisibleItemPosition()
 //                findFirstCompletelyVisibleItemPosition//上方
 //                findLastVisibleItemPosition()
@@ -135,22 +135,18 @@ public class RecyclerViewActivity extends ActionBarActivity {
         myAdapter.setOnItemClickListener(new onItemClick() {//设置item点击事件
             @Override
             public void setonItemClick(View view, int position) {
-                arrayList.remove(position);
+                arrayList.remove(position); 
                 myAdapter.notifyItemRemoved(position);
                 myAdapter.notifyItemRangeChanged(position, 20);//删除后数据发生变化
                 Toast.makeText(RecyclerViewActivity.this, position + "个以删除！！！！！！", Toast.LENGTH_SHORT).show();
             }
         });
         recyclerView.setAdapter(myAdapter);
-
-
     }
 
     /**
      * 分割线
      */
     private class MyItemDecoration extends RecyclerView.ItemDecoration {
-
-
     }
 }
