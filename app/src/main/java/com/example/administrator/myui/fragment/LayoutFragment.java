@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.administrator.myui.R;
 import com.example.administrator.myui.activity.DragTopLayoutActivity;
 import com.example.administrator.myui.activity.FragmentCutPagerSlidingTabStripActivity;
