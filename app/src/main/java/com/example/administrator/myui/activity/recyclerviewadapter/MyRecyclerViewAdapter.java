@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * 新的适配器 数据的加载没有连接数据库
  * Created by C.jiuxu on 2015/6/17.
  */
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
+public class MyRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private final Context context;
     private final ArrayList<String> arrayList;
@@ -24,6 +24,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
     private int itemCount;
     private Runnable runnable;
     private boolean tag = true;
+    private MyViewHolderTwo myViewHolderTwo;
 
 
     public MyRecyclerViewAdapter(Context context, ArrayList<String> arrayList) {
@@ -32,21 +33,26 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
     }
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {//  第二个参数 为item的类型
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {//  第二个参数 为item的类型
         View view = null;
         MyViewHolder myViewHolder = null;
         switch (viewType) {
             case 1:
                 view = LayoutInflater.from(context).inflate(R.layout.activity_recycler_view_rv_item, null);
                 myViewHolder = new MyViewHolder(view, onItemClick, onItemLongClick);
-                break;
+                return myViewHolder;
+            case 2:
+                view = LayoutInflater.from(context).inflate(R.layout.activity_recycler_view_rv_item2, null);
+                myViewHolderTwo = new MyViewHolderTwo(view);
+                return myViewHolderTwo;
         }
 
-        return myViewHolder;
+        return null;
     }
 
     /**
      * tiem点击事件
+     *
      * @param onItemClick
      */
     public void setOnItemClickListener(onItemClick onItemClick) {
@@ -55,6 +61,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     /**
      * item长按点击事件
+     *
      * @param onItemLongClick
      */
     public void setOnItemLongClickListener(onItemLongClick onItemLongClick) {
@@ -62,20 +69,28 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {//根据要显示的item放入数据 posotion当前加入屏幕的item
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {//根据要显示的item放入数据 posotion当前加入屏幕的item
         int itemtype = getItemViewType(position);
         itemCount = getItemCount();
         switch (itemtype) {
             case 1:
-                holder.tvname.setText(arrayList.get(position));
-                holder.tvnsex.setText(position + "");
+                MyViewHolder a = (MyViewHolder) holder;
+                a.tvname.setText(arrayList.get(position));
+                a.tvnsex.setText(position + "");
                 break;
         }
     }
 
     @Override
     public int getItemViewType(int position) {// item的类型 返回类型
-        return 1;
+
+        if (position % 2 == 0) {
+            return 1;
+
+        } else {
+            return 2;
+        }
+
     }
 
     @Override

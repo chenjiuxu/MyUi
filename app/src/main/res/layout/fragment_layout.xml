@@ -43,4 +43,14 @@
         android:gravity="center"
         android:text="DiaLog PopWindow 弹出式对话框 "
         android:textColor="@color/color_1CA2F7" />
+
+    <TextView
+        android:id="@+id/fragment_layout_bt5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/transparent_gray"
+        android:gravity="center"
+        android:text="左侧滑"
+        android:textColor="@color/color_1CA2F7" />
 </LinearLayout>

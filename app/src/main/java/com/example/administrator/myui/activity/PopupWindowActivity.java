@@ -90,7 +90,7 @@ public class PopupWindowActivity extends ActionBarActivity implements View.OnCli
         int popupWidth = view.getMeasuredWidth();
         int popupHeight = view.getMeasuredHeight();
 
-        //控件在屏幕中的据对坐标
+        //控件在屏幕中的绝对坐标
         int[] location = new int[2];
         viewbt3.getLocationOnScreen(location);
         int X = location[0];

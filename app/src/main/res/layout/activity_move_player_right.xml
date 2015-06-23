@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myui.activity.MovePlayerRightActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_move_player_right_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_world" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/activity_move_player_right_ll"
+        android:layout_marginLeft="-48dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/activity_move_player_right_viewpager"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/activity_move_player_right_tv"
+            android:layout_width="48dp"
+            android:layout_height="96dp"
+            android:background="@color/brown"
+            android:text="确\n定"
+            />
+        <TextView
+            android:id="@+id/activity_move_player_right_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/brown"
+            android:text="确/n定"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

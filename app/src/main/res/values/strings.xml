@@ -38,4 +38,5 @@
     <string name="title_activity_popup_window">PopupWindowActivity</string>
     <string name="title_activity_loading_dialo">LoadingDialoActivity</string>
     <string name="title_activity_secret_text_view">SecretTextViewActivity</string>
+    <string name="title_activity_move_player_right">MovePlayerRightActivity</string>
 </resources>

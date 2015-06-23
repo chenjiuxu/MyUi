@@ -75,6 +75,10 @@
             android:name=".activity.SecretTextViewActivity"
             android:label="文字随机消失显示" >
         </activity>
+        <activity
+            android:name=".activity.MovePlayerRightActivity"
+            android:label="@string/title_activity_move_player_right" >
+        </activity>
     </application>
 
 </manifest>
