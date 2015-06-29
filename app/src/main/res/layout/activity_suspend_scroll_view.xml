@@ -8,152 +8,168 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/color_1CA2F7" />
+        android:background="@color/titelblue" />
 
-    <com.example.administrator.myui.ui.SuspendScrollView
-        android:id="@+id/activity_suspend_acroll_scrollview"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+
+        <com.example.administrator.myui.ui.SuspendScrollView
+            android:id="@+id/activity_suspend_acroll_scrollview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="9dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <include
-                android:id="@+id/suspen_scroll_include"
-                layout="@layout/suspen_scroll_view_child"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <include
+                    android:id="@+id/suspen_scroll_include"
+                    layout="@layout/suspen_scroll_view_child"></include>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/color_1CA2F7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/color_1CA2F7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_1CA2F7"
+
+                    />
 
 
-        </LinearLayout>
-    </com.example.administrator.myui.ui.SuspendScrollView>
+            </LinearLayout>
+        </com.example.administrator.myui.ui.SuspendScrollView>
+
+
+        <include
+            android:id="@+id/suspen_scroll_include2"
+            layout="@layout/suspen_scroll_view_child"
+            android:visibility="gone"
+            ></include>
+    </FrameLayout>
+
 
 </LinearLayout>

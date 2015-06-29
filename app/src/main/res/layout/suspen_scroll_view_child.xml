@@ -4,6 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="48dp"
     android:background="@color/color_5E7D9A"
+    android:gravity="center"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="这是悬浮测试item" />
 </LinearLayout>

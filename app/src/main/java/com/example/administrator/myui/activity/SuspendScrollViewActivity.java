@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ public class SuspendScrollViewActivity extends ActionBarActivity implements Susp
     private LinearLayout linearLayout;
     private int top;
     private boolean tag = true;
+    private LinearLayout linearLayout2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class SuspendScrollViewActivity extends ActionBarActivity implements Susp
         setContentView(R.layout.activity_suspend_scroll_view);
         suspendScrollView = (SuspendScrollView) findViewById(R.id.activity_suspend_acroll_scrollview);
         linearLayout = (LinearLayout) findViewById(R.id.suspen_scroll_include);
+        linearLayout2 = (LinearLayout) findViewById(R.id.suspen_scroll_include2);
         suspendScrollView.setonScrollYListener(this);
 
     }
@@ -45,12 +48,13 @@ public class SuspendScrollViewActivity extends ActionBarActivity implements Susp
         if (a >= top) {
             if (tag) {
                 tag = false;
+                linearLayout2.setVisibility(View.VISIBLE);
                 Toast.makeText(this, "呵呵呵", Toast.LENGTH_SHORT).show();
             }
         }
         if (a < top) {
             tag = true;
-
+            linearLayout2.setVisibility(View.GONE);
         }
 
         Log.e("滚动了多少", a + "" + tag);
