@@ -23,6 +23,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+
 public class KeywordsFlow extends FrameLayout implements OnGlobalLayoutListener{
     public static final int IDX_X = 0;
     public static final int IDX_Y = 1;
@@ -89,7 +90,7 @@ public class KeywordsFlow extends FrameLayout implements OnGlobalLayoutListener{
         random = new Random();
         vecKeywords = new Vector<String>(MAX);
         getViewTreeObserver().addOnGlobalLayoutListener(this);
-        interpolator = AnimationUtils.loadInterpolator(getContext(), android.R.anim.decelerate_interpolator);
+        interpolator = AnimationUtils.loadInterpolator(getContext(), android.R.anim.decelerate_interpolator);//
         animAlpha2Opaque = new AlphaAnimation(0.0f, 1.0f);
         animAlpha2Transparent = new AlphaAnimation(1.0f, 0.0f);
         animScaleLarge2Normal = new ScaleAnimation(2, 1, 2, 1);
@@ -388,12 +389,12 @@ public class KeywordsFlow extends FrameLayout implements OnGlobalLayoutListener{
     public void setOnItemClickListener(OnClickListener listener) {
         itemClickListener = listener;
     }
-
-    // public void onDraw(Canvas canvas) {  
-    // super.onDraw(canvas);  
-    // Paint p = new Paint();  
-    // p.setColor(Color.BLACK);  
-    // canvas.drawCircle((width >> 1) - 2, (height >> 1) - 2, 4, p);  
-    // p.setColor(Color.RED);  
-    // }  
+//
+//     public void onDraw(Canvas canvas) {
+//     super.onDraw(canvas);
+//     Paint p = new Paint();
+//     p.setColor(Color.BLACK);
+//     canvas.drawCircle((width >> 1) - 2, (height >> 1) - 2, 4, p);
+//     p.setColor(Color.RED);
+//     }
 }

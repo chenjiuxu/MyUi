@@ -60,7 +60,7 @@ public class CardViewActivity extends ActionBarActivity {
             public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
                 Palette.generateAsync(loadedImage, new Palette.PaletteAsyncListener() {
                     @Override
-                    public void onGenerated(Palette palette) {
+                    public void onGenerated(Palette palette) {//提取图片主题色
                         //getDarkMutedSwatch 深柔色
                         //getLightMutedSwatch 亮柔色
                         //getDarkVibrantSwatch 深色
