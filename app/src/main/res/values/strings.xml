@@ -39,4 +39,5 @@
     <string name="title_activity_loading_dialo">LoadingDialoActivity</string>
     <string name="title_activity_secret_text_view">SecretTextViewActivity</string>
     <string name="title_activity_move_player_right">MovePlayerRightActivity</string>
+    <string name="title_activity_drag_grid_view">DragGridViewActivity</string>
 </resources>

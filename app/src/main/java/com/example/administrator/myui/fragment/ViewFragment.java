@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import com.example.administrator.myui.R;
 import com.example.administrator.myui.activity.CardViewActivity;
 import com.example.administrator.myui.activity.DeleteListViewMainActivity;
+import com.example.administrator.myui.activity.DragGridViewActivity;
 import com.example.administrator.myui.activity.DragViewActivity;
 import com.example.administrator.myui.activity.RecyclerViewActivity;
 import com.example.administrator.myui.activity.SecretTextViewActivity;
@@ -18,7 +19,7 @@ import com.example.administrator.myui.activity.SlideButtonActivity;
 import com.example.administrator.myui.activity.SuspendScrollViewActivity;
 
 /**
- *文字随机隐藏 显示界面
+ * 文字随机隐藏 显示界面
  * Created by C.jiuxu on 2015/6/2.
  */
 public class ViewFragment extends Fragment implements View.OnClickListener {
@@ -31,6 +32,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
     private View image_bt5;
     private View image_bt6;
     private View image_bt7;
+    private View image_bt8;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
         image_bt5 = view.findViewById(R.id.fragment_view_bt5);
         image_bt6 = view.findViewById(R.id.fragment_view_bt6);
         image_bt7 = view.findViewById(R.id.fragment_view_bt7);
+        image_bt8 = view.findViewById(R.id.fragment_view_bt8);
 
         image_bt1.setOnClickListener(this);
         image_bt2.setOnClickListener(this);
@@ -60,6 +63,7 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
         image_bt5.setOnClickListener(this);
         image_bt6.setOnClickListener(this);
         image_bt7.setOnClickListener(this);
+        image_bt8.setOnClickListener(this);
         return view;
 
 
@@ -95,6 +99,10 @@ public class ViewFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.fragment_view_bt7:
                 intent = new Intent(activity, SecretTextViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.fragment_view_bt8:
+                intent = new Intent(activity, DragGridViewActivity.class);
                 startActivity(intent);
                 break;
         }

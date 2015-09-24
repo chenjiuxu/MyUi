@@ -129,7 +129,7 @@ public class ImageCarousel extends ActionBarActivity {
         }
         @Override
         public View instantiateItem(ViewGroup container, int position) {
-            ImageView imageView = new ImageView(ImageCarousel.this);
+                ImageView imageView = new ImageView(ImageCarousel.this);
             //  imageView.setScaleType(ImageView.ScaleType.CENTER);//图片模式
             ImageLoader.getInstance().displayImage(arrayList.get(position), imageView, optiond);
             container.addView(imageView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
@@ -137,7 +137,7 @@ public class ImageCarousel extends ActionBarActivity {
         }
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView((View) object);
+                container.removeView((View) object);
         }
     }
 

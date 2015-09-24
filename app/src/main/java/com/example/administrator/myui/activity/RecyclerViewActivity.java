@@ -63,7 +63,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
         /**
          * 滚动事件
          * */
-        recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
