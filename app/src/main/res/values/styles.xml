@@ -5,10 +5,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="My.Theme" parent="Theme.AppCompat.NoActionBar">
+    <style name="My.Theme" parent="Theme.AppCompat.Light">
         <item name="android:windowContentOverlay">@null</item>
         <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
         <!-- Actionbar color -->
         <item name="colorPrimary">@color/theme_color</item>
         <!--Status bar color-->
