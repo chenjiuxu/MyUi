@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
 
     defaultConfig {
         applicationId "com.example.administrator.myui"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 18
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -21,7 +22,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:appcompat-v7:23.0.0'
     //图片手势放大缩小
     compile 'com.github.chrisbanes.photoview:library:1.2.3'
     //compile 'com.facebook.fresco:fresco:0.5.0+'//图片加载工具 (不成熟)
@@ -34,9 +35,9 @@ dependencies {
     //recyclerview
     compile 'com.android.support:recyclerview-v7:+'
     //卡片风格
-    compile 'com.android.support:cardview-v7:21.+'
+    compile 'com.android.support:cardview-v7:23.+'
     //颜色提取
-    compile 'com.android.support:palette-v7:21.0.+'
+    compile 'com.android.support:palette-v7:23.0.+'
     //选项卡
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
     //顶部下拉
