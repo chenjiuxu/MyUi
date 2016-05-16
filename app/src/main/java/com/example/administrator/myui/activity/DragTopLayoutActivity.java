@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -19,7 +20,7 @@ import github.chenupt.dragtoplayout.DragTopLayout;
  * 顶部下拉 DragTopLayout
  * Created by C.jiuxu on 2015/6/17.
  * */
-public class DragTopLayoutActivity extends ActionBarActivity {
+public class DragTopLayoutActivity extends AppCompatActivity {
 
     private DragTopLayout dragtoplayout;
     private ViewPager viewpager;
@@ -49,6 +50,11 @@ public class DragTopLayoutActivity extends ActionBarActivity {
         dragtoplayout = (DragTopLayout) findViewById(R.id.activity_drag_top_layout_dragtoplayout);
         viewpager = (ViewPager) findViewById(R.id.activity_drag_top_layout_viewpager);
         viewpager.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager()));
+    }
+
+    @Override
+    public android.support.v4.app.FragmentManager getSupportFragmentManager() {
+        return null;
     }
 
 

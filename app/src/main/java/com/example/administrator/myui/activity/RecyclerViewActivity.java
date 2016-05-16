@@ -3,6 +3,7 @@ package com.example.administrator.myui.activity;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,7 +25,7 @@ import java.util.ArrayList;
  * RecyclerView 替代listview
  * Created by C.jiuxu on 2015/6/17.
  */
-public class RecyclerViewActivity extends ActionBarActivity {
+public class RecyclerViewActivity extends AppCompatActivity {
     private RecyclerView recyclerView;//理解为新的listview
     private ArrayList<String> arrayList;
     /**
@@ -68,11 +69,14 @@ public class RecyclerViewActivity extends ActionBarActivity {
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 int a = layoutManager.findLastCompletelyVisibleItemPosition();//屏幕下方出现的item第几个item
+                int b = layoutManager.findFirstCompletelyVisibleItemPosition();//屏幕上方出现的item第几个item
+
 //                findFirstVisibleItemPosition()
 //                findFirstCompletelyVisibleItemPosition//上方
 //                findLastVisibleItemPosition()
 //                findLastCompletelyVisibleItemPosition()//下方
-//                Log.e("滚动状态1", newState + "");
+                Log.e("滚动状态1", newState + "");
+                Log.e("lll","上方"+b+"下方"+a);
                 int totalItemCount = layoutManager.getItemCount() - 1;
                 if (a == totalItemCount && tag) {//通知数据改变
                     tag = false;
@@ -118,7 +122,7 @@ public class RecyclerViewActivity extends ActionBarActivity {
         gridLayoutManager = new GridLayoutManager(this, 2);//这里用线性宫格显示 类似于grid view
         staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, OrientationHelper.VERTICAL);//这里用线性宫格显示 类似于瀑布流
         layoutManager = new LinearLayoutManager(this);//线型显示
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);//设置滚动方向
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);//设置滚动方向
     }
 
     /**

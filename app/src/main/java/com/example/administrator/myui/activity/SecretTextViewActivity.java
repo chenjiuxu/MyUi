@@ -2,6 +2,7 @@ package com.example.administrator.myui.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.administrator.myui.R;
@@ -11,7 +12,7 @@ import com.example.administrator.myui.ui.SecretTextView;
  * 文字随机显示消失
  * Created by C.jiuxu on 2015/6/17.
  */
-public class SecretTextViewActivity extends ActionBarActivity {
+public class SecretTextViewActivity extends AppCompatActivity {
 
     private SecretTextView secretTextView;
 

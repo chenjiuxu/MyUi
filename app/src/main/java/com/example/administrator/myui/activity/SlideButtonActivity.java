@@ -2,6 +2,7 @@ package com.example.administrator.myui.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.administrator.myui.R;
@@ -10,7 +11,7 @@ import com.example.administrator.myui.ui.MySlipSwitch;
  * 滑动的按钮
  * Created by C.jiuxu on 2015/6/17.
  */
-public class SlideButtonActivity extends ActionBarActivity {
+public class SlideButtonActivity extends AppCompatActivity {
 
     private MySlipSwitch slide_button;
 

@@ -2,6 +2,7 @@ package com.example.administrator.myui.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -16,7 +17,7 @@ import com.example.administrator.myui.ui.SuspendScrollView;
  * 悬浮ScrollView
  * Created by C.jiuxu on 2015/6/2.
  */
-public class SuspendScrollViewActivity extends ActionBarActivity implements SuspendScrollView.OnScrollYListener {
+public class SuspendScrollViewActivity extends AppCompatActivity implements SuspendScrollView.OnScrollYListener {
 
     private SuspendScrollView suspendScrollView;
     private LinearLayout linearLayout;
@@ -39,7 +40,7 @@ public class SuspendScrollViewActivity extends ActionBarActivity implements Susp
     public void onWindowFocusChanged(boolean hasFocus) {
         top = linearLayout.getTop();
         Log.e("距离", top + "");
-        super.onWindowFocusChanged(hasFocus);
+
     }
 
     @Override

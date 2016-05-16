@@ -3,6 +3,7 @@ package com.example.administrator.myui.activity;
 import android.graphics.Bitmap;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -20,7 +21,7 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
  * 更多请参考 https://github.com/siyamed/android-shape-imageview
  * Created by C.jiuxu on 2015/6/2.
  */
-public class ImageShape extends ActionBarActivity {
+public class ImageShape extends AppCompatActivity {
 
     private DisplayImageOptions optiond;
     private BubbleImageView iv1;

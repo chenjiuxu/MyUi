@@ -2,6 +2,7 @@ package com.example.administrator.myui.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
@@ -16,7 +17,7 @@ import com.example.administrator.myui.R;
  * 随意拖动view
  * Created by C.jiuxu on 2015/6/17.
  */
-public class DragViewActivity extends ActionBarActivity {
+public class DragViewActivity extends AppCompatActivity {
 
     private View drag_bt;
     private int[] position;

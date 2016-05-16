@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,7 +25,7 @@ import com.example.administrator.myui.ui.SlideView;
  * 仿QQ侧滑listview
  * Created by C.jiuxu on 2015/6/17.
  */
-public class DeleteListViewMainActivity extends ActionBarActivity implements OnItemClickListener, OnClickListener,
+public class DeleteListViewMainActivity extends AppCompatActivity implements OnItemClickListener, OnClickListener,
         SlideView.OnSlideListener {
 
     private static final String TAG = "MainActivity";

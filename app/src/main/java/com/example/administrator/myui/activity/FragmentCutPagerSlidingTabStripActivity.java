@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.example.administrator.myui.R;
@@ -22,7 +23,7 @@ import com.example.administrator.myui.fragment.ViewFragment;
  * 选项卡切换
  * Created by C.jiuxu on 2015/6/17.
  */
-public class FragmentCutPagerSlidingTabStripActivity extends ActionBarActivity {
+public class FragmentCutPagerSlidingTabStripActivity extends AppCompatActivity {
 
     private PagerSlidingTabStrip pagerSlidingTabStrip;
     private ViewPager viewpager;

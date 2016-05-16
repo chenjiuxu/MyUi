@@ -3,6 +3,7 @@ package com.example.administrator.myui.activity;
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -14,7 +15,7 @@ import com.example.administrator.myui.R;
  * 右拉小控件
  * Created by C.jiuxu on 2015/6/23.
  */
-public class MovePlayerRightActivity extends ActionBarActivity {
+public class MovePlayerRightActivity extends AppCompatActivity {
     private View bt;
     private View ll;
     private int width;

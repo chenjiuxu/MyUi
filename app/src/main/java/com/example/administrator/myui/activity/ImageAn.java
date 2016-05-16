@@ -3,6 +3,7 @@ package com.example.administrator.myui.activity;
 import android.graphics.Bitmap;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.example.administrator.myui.R;
@@ -16,7 +17,7 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  * 单张网络图片放大
  * Created by C.jiuxu on 2015/6/2.
  */
-public class ImageAn extends ActionBarActivity {
+public class ImageAn extends AppCompatActivity {
 
     private PhotoViewAttacher photoViewAttacher;
     private ImageView photoView;

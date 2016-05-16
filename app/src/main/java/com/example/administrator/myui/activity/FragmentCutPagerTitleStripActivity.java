@@ -7,6 +7,7 @@ import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,7 +21,7 @@ import com.example.administrator.myui.fragment.ViewFragment;
  * 选项卡指示
  * Created by C.jiuxu on 2015/6/17.
  */
-public class FragmentCutPagerTitleStripActivity extends ActionBarActivity {
+public class FragmentCutPagerTitleStripActivity extends AppCompatActivity {
 
     private ViewPager viewpager;
     private PagerTitleStrip pagertitlestrip;

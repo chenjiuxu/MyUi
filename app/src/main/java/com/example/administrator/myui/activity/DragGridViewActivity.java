@@ -2,6 +2,7 @@ package com.example.administrator.myui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.SimpleAdapter;
 
 import com.example.administrator.myui.R;
@@ -12,7 +13,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class DragGridViewActivity extends ActionBarActivity {
+public class DragGridViewActivity extends AppCompatActivity {
     private List<HashMap<String, Object>> dataSourceList = new ArrayList<HashMap<String, Object>>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {

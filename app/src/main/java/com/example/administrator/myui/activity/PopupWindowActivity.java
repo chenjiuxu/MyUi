@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Layout;
 import android.util.Log;
 import android.view.Gravity;
@@ -24,7 +25,7 @@ import com.example.administrator.myui.ui.LoadingDialog;
  * 网等待框
  * Created by C.jiuxu on 2015/6/19.
  */
-public class PopupWindowActivity extends ActionBarActivity implements View.OnClickListener {
+public class PopupWindowActivity extends AppCompatActivity implements View.OnClickListener {
 
     private View viewbt2;
     private View viewbt3;

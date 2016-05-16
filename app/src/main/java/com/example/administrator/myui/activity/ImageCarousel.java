@@ -6,6 +6,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
  * 图片轮播
  * Created by C.jiuxu on 2015/6/2.
  */
-public class ImageCarousel extends ActionBarActivity {
+public class ImageCarousel extends AppCompatActivity {
 
     private ViewPager viewpager;
     private LinearLayout linearlayout;

@@ -3,6 +3,7 @@ package com.example.administrator.myui.activity;
 import android.graphics.Bitmap;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.CardView;
 import android.view.View;
@@ -22,7 +23,7 @@ import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
  * 卡片风
  * Created by C.jiuxu on 2015/6/17.
  */
-public class CardViewActivity extends ActionBarActivity {
+public class CardViewActivity extends AppCompatActivity {
 
     private CardView cardview;
 
