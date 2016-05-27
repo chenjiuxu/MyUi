@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:elevation="20dp"
         android:translationZ="20dp"
-        app:cardCornerRadius="6dp">
+            app:cardCornerRadius="6dp">
 
         <uk.co.senab.photoview.PhotoView
             android:id="@+id/activity_card_photoview"

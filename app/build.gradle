@@ -22,24 +22,27 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:23.0.0'
     //图片手势放大缩小
-    compile 'com.github.chrisbanes.photoview:library:1.2.3'
     //compile 'com.facebook.fresco:fresco:0.5.0+'//图片加载工具 (不成熟)
     //图片加载工具
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
     //下拉刷新酷炫效果
-    compile 'in.srain.cube:ultra-ptr:1.0.9'
     //各种形状的imageview
-    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     //recyclerview
-    compile 'com.android.support:recyclerview-v7:+'
     //卡片风格
-    compile 'com.android.support:cardview-v7:23.+'
     //颜色提取
-    compile 'com.android.support:palette-v7:23.0.+'
     //选项卡
-    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
     //顶部下拉
+    //圆形
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'in.srain.cube:ultra-ptr:1.0.9'
+    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:palette-v7:23.4.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
     compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.android.support:design:23.4.0'
 }

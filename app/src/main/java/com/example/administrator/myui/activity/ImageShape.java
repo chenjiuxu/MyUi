@@ -4,8 +4,8 @@ import android.graphics.Bitmap;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.widget.ImageView;
+
 
 import com.example.administrator.myui.R;
 import com.github.siyamed.shapeimageview.BubbleImageView;
@@ -15,6 +15,9 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 /**
  * 各种imageview形状
@@ -27,6 +30,7 @@ public class ImageShape extends AppCompatActivity {
     private BubbleImageView iv1;
     private RoundedImageView iv2;
     private CircularImageView iv3;
+    private CircleImageView profile_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +54,14 @@ public class ImageShape extends AppCompatActivity {
         iv1 = (BubbleImageView) findViewById(R.id.activity_image_shape_iv1);
         iv2 = (RoundedImageView) findViewById(R.id.activity_image_shape_iv2);//圆角
         iv3 = (CircularImageView) findViewById(R.id.activity_image_shape_iv3);//圆形
+        profile_image = (CircleImageView) findViewById(R.id.profile_image);//圆形
+        ImageView v4_cv = (ImageView) findViewById(R.id.v4_cv);//圆形
 
         ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", iv1, optiond);
         ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", iv2, optiond);
         ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", iv3, optiond);
+        ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", v4_cv, optiond);
+        ImageLoader.getInstance().displayImage("http://pic.dofay.com/2015/04/23m04.jpg", profile_image, optiond);
 
     }
 

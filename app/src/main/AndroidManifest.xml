@@ -11,9 +11,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-
-      >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -44,37 +42,45 @@
             android:label="随意拖动view" />
         <activity
             android:name=".activity.SlideButtonActivity"
-            android:label="滑动的按钮"></activity>
+            android:label="滑动的按钮" />
         <activity
             android:name=".activity.SuspendScrollViewActivity"
-            android:label="悬浮ScrollView"></activity>
+            android:label="悬浮ScrollView" />
         <activity
             android:name=".activity.RecyclerViewActivity"
-            android:label="RecyclerView 替代listview"></activity>
+            android:label="RecyclerView 替代listview" />
         <activity
             android:name=".activity.CardViewActivity"
-            android:label="卡片风"></activity>
+            android:label="卡片风" />
         <activity
             android:name=".activity.FragmentCutPagerTitleStripActivity"
-            android:label="选项卡指示"></activity>
+            android:label="选项卡指示" />
         <activity
             android:name=".activity.FragmentCutPagerSlidingTabStripActivity"
-            android:label="选项卡切换"></activity>
+            android:label="选项卡切换" />
         <activity
             android:name=".activity.DragTopLayoutActivity"
-            android:label="顶部下拉 DragTopLayout"></activity>
+            android:label="顶部下拉 DragTopLayout" />
         <activity
             android:name=".activity.PopupWindowActivity"
-            android:label="Dialog popuWindow弹出式对话框"></activity>
+            android:label="Dialog popuWindow弹出式对话框" />
         <activity
             android:name=".activity.SecretTextViewActivity"
-            android:label="文字随机消失显示"></activity>
+            android:label="文字随机消失显示" />
         <activity
             android:name=".activity.MovePlayerRightActivity"
-            android:label="@string/title_activity_move_player_right"></activity>
+            android:label="@string/title_activity_move_player_right" />
         <activity
             android:name=".activity.DragGridViewActivity"
-            android:label="@string/title_activity_drag_grid_view"></activity>
+            android:label="@string/title_activity_drag_grid_view" />
+        <activity
+            android:name=".activity.CollapsingToolbarLayoutActivity"
+            android:label="@string/title_activity_collapsing_toolbar_layout"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.CTVPActivity"
+            android:label="@string/title_activity_ctvp"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

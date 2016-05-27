@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -89,7 +89,26 @@
             android:text="可拖拽的GridView效果"
             android:textColor="@color/color_1CA2F7" />
 
+        <TextView
+            android:id="@+id/fragment_view_bt9"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="CollapsingToolbarLayout"
+            android:textColor="@color/color_1CA2F7" />
+        <TextView
+            android:id="@+id/fragment_view_bt10"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="CollapsingToolbarLayout viewpage"
+            android:textColor="@color/color_1CA2F7" />
+
 
     </LinearLayout>
 
-</FrameLayout>
+</android.support.v4.widget.NestedScrollView >

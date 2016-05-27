@@ -1,56 +1,63 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.administrator.myui.fragment.LayoutFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/fragment_layout_bt1"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/transparent_gray"
-        android:gravity="center"
-        android:text="选项卡指示 V4包下"
-        android:textColor="@color/color_1CA2F7" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/fragment_layout_bt2"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="6dp"
-        android:background="@color/transparent_gray"
-        android:gravity="center"
-        android:text="选显卡切换"
-        android:textColor="@color/color_1CA2F7" />
+        <TextView
+            android:id="@+id/fragment_layout_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="选项卡指示 V4包下"
+            android:textColor="@color/color_1CA2F7" />
 
-    <TextView
-        android:id="@+id/fragment_layout_bt3"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="6dp"
-        android:background="@color/transparent_gray"
-        android:gravity="center"
-        android:text="顶部下拉 DragTopLayout"
-        android:textColor="@color/color_1CA2F7" />
-    <TextView
-        android:id="@+id/fragment_layout_bt4"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="6dp"
-        android:background="@color/transparent_gray"
-        android:gravity="center"
-        android:text="DiaLog PopWindow 弹出式对话框 "
-        android:textColor="@color/color_1CA2F7" />
+        <TextView
+            android:id="@+id/fragment_layout_bt2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="选显卡切换"
+            android:textColor="@color/color_1CA2F7" />
 
-    <TextView
-        android:id="@+id/fragment_layout_bt5"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="6dp"
-        android:background="@color/transparent_gray"
-        android:gravity="center"
-        android:text="左侧滑"
-        android:textColor="@color/color_1CA2F7" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/fragment_layout_bt3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="顶部下拉 DragTopLayout"
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_layout_bt4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="DiaLog PopWindow 弹出式对话框 "
+            android:textColor="@color/color_1CA2F7" />
+
+        <TextView
+            android:id="@+id/fragment_layout_bt5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent_gray"
+            android:gravity="center"
+            android:text="左侧滑"
+            android:textColor="@color/color_1CA2F7" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

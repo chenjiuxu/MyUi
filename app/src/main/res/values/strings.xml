@@ -12,7 +12,7 @@
 
     <string name="action_settings">Settings</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_image_an">ImageAn</string>
 
@@ -40,4 +40,6 @@
     <string name="title_activity_secret_text_view">SecretTextViewActivity</string>
     <string name="title_activity_move_player_right">MovePlayerRightActivity</string>
     <string name="title_activity_drag_grid_view">DragGridViewActivity</string>
+    <string name="title_activity_collapsing_toolbar_layout">CollapsingToolbarLayoutActivity</string>
+    <string name="title_activity_ctvp">CTVPActivity</string>
 </resources>

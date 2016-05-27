@@ -29,8 +29,8 @@ public class DragTopLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drag_top_layout);
-        initialView();
-        setdragtoplayout();
+     //   initialView();
+      //  setdragtoplayout();
     }
 
     /**

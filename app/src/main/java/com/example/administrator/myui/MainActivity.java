@@ -126,6 +126,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
                 toolbar.setTitle("首页");
+
+
+
             }
 
             @Override

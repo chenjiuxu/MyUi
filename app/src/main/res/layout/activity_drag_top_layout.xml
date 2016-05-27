@@ -12,12 +12,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="144dp"
-            android:background="@color/color_C3C3C3"></LinearLayout>
+
+            android:background="@color/color_C3C3C3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"
+
+                />
+
+        </LinearLayout>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/activity_drag_top_layout_viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+            android:layout_height="match_parent"/>
     </github.chenupt.dragtoplayout.DragTopLayout>
 
 
